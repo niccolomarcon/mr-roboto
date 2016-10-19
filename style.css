@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?k7rjf9');
+  src:  url('fonts/icomoon.eot?k7rjf9#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?k7rjf9') format('truetype'),
+    url('fonts/icomoon.woff?k7rjf9') format('woff'),
+    url('fonts/icomoon.svg?k7rjf9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cart:before {
+  content: "\1f6cd";
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: #d2222e;
+  display: table;
+}
+
+.wrapper {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10em;
+  margin: 0 auto;
+}
+
+.icon-cart {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.7em;
+}
+
+a {
+  color: #d2222e;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  margin-top: -1.6em;
+  margin-left: 4.4%;
+  letter-spacing: 2.5em;
+}
