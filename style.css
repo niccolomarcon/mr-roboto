@@ -72,3 +72,20 @@ p {
   margin-left: 4.4%;
   letter-spacing: 2.5em;
 }
+
+@media screen and (max-width: 925px) {
+  h1 { font-size: 7em; }
+  p { font-size: 1em; }
+  .icon-cart { font-size: 2.5em; }
+}
+
+@media screen and (max-width: 649px) {
+  h1 { font-size: 4em; }
+  p { font-size: 0.6em; }
+  .icon-cart { font-size: 2em; }
+}
+
+@media screen and (max-width: 369px) {
+  h1 { font-size: 3em; }
+  p { font-size: 0.45em; }
+}
