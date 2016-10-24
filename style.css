@@ -44,10 +44,16 @@ html, body {
   vertical-align: middle;
 }
 
+h1:hover {
+  font-size: 12em;
+  cursor: pointer;
+}
+
 h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 10em;
   margin: 0 auto;
+  transition: font-size 0.7s;
 }
 
 .icon-cart {
@@ -71,21 +77,34 @@ p {
   margin-top: -1.6em;
   margin-left: 4.4%;
   letter-spacing: 2.5em;
+  transition: font-size 0.7s;
 }
 
-@media screen and (max-width: 925px) {
+@media screen and (max-width: 1118px) {
   h1 { font-size: 7em; }
   p { font-size: 1em; }
   .icon-cart { font-size: 2.5em; }
+  h1:hover {
+    font-size: 9em;
+    cursor: pointer;
+  }
 }
 
-@media screen and (max-width: 649px) {
+@media screen and (max-width: 834px) {
   h1 { font-size: 4em; }
   p { font-size: 0.6em; }
   .icon-cart { font-size: 2em; }
+  h1:hover {
+    font-size: 6em;
+    cursor: pointer;
+  }
 }
 
-@media screen and (max-width: 369px) {
+@media screen and (max-width: 556px) {
   h1 { font-size: 3em; }
   p { font-size: 0.45em; }
+  h1:hover {
+    font-size: 5em;
+    cursor: pointer;
+  }
 }
