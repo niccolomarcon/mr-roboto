@@ -18,21 +18,88 @@
     <meta property="og:image"       content="https://niccolomarcon.github.io/mr-roboto">
     <title>Mr. Roboto</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+      body {
+        margin: 0;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        color: #d2222e;
+        font-family: 'Roboto', sans-serif;
+        display: table;
+      }
+      .wrapper {
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+      }
+      .wrapper h1 {
+        font-size: 10em;
+        margin: 0;
+      }
+      .wrapper p {
+        font-size: 1.5em;
+        margin: -1.6em auto auto 4.4%;
+        letter-spacing: 2.5em;
+      }
+      #buy {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        color: #d2222e;
+        font-size: 1.7em;
+        border-style: solid;
+        padding: 10px;
+        border-width: 2px;
+        border-color: #d2222e;
+        transition: background-color .5s, color .5s;
+      }
+      #buy i {
+        transform: translateY(3px);
+      }
+      #buy:hover {
+        background-color: #d2222e;
+        color: black;
+        cursor: pointer;
+      }
+      @media screen and (max-width: 930px) {
+        .wrapper h1 { font-size: 7em; }
+        .wrapper p { font-size: 1em; }
+      }
+      @media screen and (max-width: 650px) {
+        .wrapper h1 { font-size: 4em; }
+        .wrapper p { font-size: .6em; }
+      }
+      @media screen and (max-width: 380px) {
+        .wrapper h1 { font-size: 3em; }
+        .wrapper p { font-size: .45em; }
+      }
+    </style>
   </head>
+  
   <body>
     <div class="wrapper">
       <h1>MR. ROBOTO</h1>
       <p>font society</p>
     </div>
-    <a href="https://goo.gl/b20CPL" target="_blank"><span class="icon-cart" title="Get the T-shirt"></span></a>
+    <div id="buy">
+      <i class="material-icons">shopping_cart</i>
+      Get the T-shirt
+    </div>
+    
     <script>
+      const url = 'https://goo.gl/b20CPL';
+      document.getElementById('buy').onclick = function() {
+        window.open(url, '_blank');
+      };
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-86017818-1', 'auto');
       ga('send', 'pageview');
     </script>
